@@ -1,9 +1,14 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    height: 75vh;
+    height: 95vh;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -53,11 +58,26 @@ button {
 
 .clear {
     background-color: #faa;
+}
 
+.clear:hover {
+    background-color: #e99;
+}
+
+.clear:active {
+    background-color: #d88;
 }
 
 .delete {
     background-color: #aaf;
+}
+
+.delete:hover {
+    background-color: #99e;
+}
+
+.delete:active {
+    background-color: #88d;
 }
 
 .numbers {
@@ -73,6 +93,14 @@ button {
     width: 69px;
 }
 
+.numbers button:hover {
+    background-color: #ddd;
+}
+
+.number button:active {
+    background-color: #ccc;
+}
+
 .current {
     min-height: 64px;
     font-size: 40px;
@@ -81,4 +109,15 @@ button {
 .previous {
     min-height: 32px;
     font-size: 20px;
+}
+
+.footer {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
